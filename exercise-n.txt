@@ -1,45 +1,26 @@
-EXERCISE 9 /////////////////////////////////////////////////////////////////////
+Exercise 10
 
-+------------+--------------+------+-----+---------+----------------+
-| Field      | Type         | Null | Key | Default | Extra          |
-+------------+--------------+------+-----+---------+----------------+
-| Random     | varchar(100) | YES  |     | NULL    |                |
-| id         | int(11)      | NO   | PRI | NULL    | auto_increment |
-| email      | varchar(225) | YES  |     | NULL    |                |
-| password   | varchar(40)  | YES  |     | NULL    |                |
-| createdOn  | datetime     | YES  |     | NULL    |                |
-| modifiedOn | datetime     | YES  |     | NULL    |                |
-+------------+--------------+------+-----+---------+----------------+
-6 rows in set (0.00 sec)
++--------------+---------------+------+-----+---------+-------+
+| Field        | Type          | Null | Key | Default | Extra |
++--------------+---------------+------+-----+---------+-------+
+| Gender       | enum('m','f') | YES  |     | NULL    |       |
+| specificdate | datetime      | YES  |     | NULL    |       |
+| total        | int(11)       | YES  |     | NULL    |       |
++--------------+---------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
 
-+---------------+--------------+------+-----+---------+----------------+
-| Field         | Type         | Null | Key | Default | Extra          |
-+---------------+--------------+------+-----+---------+----------------+
-| randomAddress | varchar(100) | YES  |     | NULL    |                |
-| id            | int(11)      | NO   | PRI | NULL    | auto_increment |
-| eccount       | int(11)      | YES  |     | NULL    |                |
-| name          | varchar(225) | YES  |     | NULL    |                |
-| createdOn     | datetime     | YES  |     | NULL    |                |
-| modifiedOn    | datetime     | YES  |     | NULL    |                |
-+---------------+--------------+------+-----+---------+----------------+
-6 rows in set (0.00 sec)
+mysql> create table chicks(dateOfBirth DATETIME,dateOfMaturation DATETIME, total INT);                                                                    
+Query OK, 0 rows affected (0.01 sec)
 
-+------------------+---------------------------------+------+-----+---------+----------------+
-| Field            | Type                            | Null | Key | Default | Extra          |
-+------------------+---------------------------------+------+-----+---------+----------------+
-| randomEntry      | varchar(100)                    | YES  |     | NULL    |                |
-| id               | int(11)                         | NO   | PRI | NULL    | auto_increment |
-| addressBookId    | int(11)                         | YES  |     | NULL    |                |
-| firstName        | varchar(225)                    | YES  |     | NULL    |                |
-| lastName         | varchar(225)                    | YES  |     | NULL    |                |
-| birthday         | datetime                        | YES  |     | NULL    |                |
-| type             | enum('home','work','home')      | YES  |     | NULL    |                |
-| suptype          | enum('phone','address','email') | YES  |     | NULL    |                |
-| contentLineONe   | varchar(225)                    | YES  |     | NULL    |                |
-| contentLineTwo   | varchar(225)                    | YES  |     | NULL    |                |
-| contentLineThree | varchar(225)                    | YES  |     | NULL    |                |
-| contentLineFour  | varchar(225)                    | YES  |     | NULL    |                |
-| contentLineFive  | varchar(225)                    | YES  |     | NULL    |                |
-+------------------+---------------------------------+------+-----+---------+----------------+
-13 rows in set (0.00 sec)
+mysql> describe chicks;
++------------------+----------+------+-----+---------+-------+
+| Field            | Type     | Null | Key | Default | Extra |
++------------------+----------+------+-----+---------+-------+
+| dateOfBirth      | datetime | YES  |     | NULL    |       |
+| dateOfMaturation | datetime | YES  |     | NULL    |       |
+| total            | int(11)  | YES  |     | NULL    |       |
++------------------+----------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> 
 
