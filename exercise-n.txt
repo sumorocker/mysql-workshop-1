@@ -1,6 +1,12 @@
-EXERCISE 6 ////////////////////////////////////////////////////////////////////
+EXERCISE 7 ////////////////////////////////////////////////////////////////////
 
+mysql> show tables;
 
-mysql> drop table Test;
-Query OK, 0 rows affected (0.00 sec)
-mysql> 
++---------------------------------+
+| Tables_in_decodemtl_addressbook |
++---------------------------------+
+| Account                         |
+| AddressBook                     |
+| Entry                           |
++---------------------------------+
+3 rows in set (0.00 sec)
