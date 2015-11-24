@@ -151,3 +151,30 @@ EXERCISE 9 /////////////////////////////////////////////////////////////////////
 | contentLineFive  | varchar(225)                    | YES  |     | NULL    |                |
 +------------------+---------------------------------+------+-----+---------+----------------+
 13 rows in set (0.00 sec)
+
+Exercise 10
+
++--------------+---------------+------+-----+---------+-------+
+| Field        | Type          | Null | Key | Default | Extra |
++--------------+---------------+------+-----+---------+-------+
+| Gender       | enum('m','f') | YES  |     | NULL    |       |
+| specificdate | datetime      | YES  |     | NULL    |       |
+| total        | int(11)       | YES  |     | NULL    |       |
++--------------+---------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> create table chicks(dateOfBirth DATETIME,dateOfMaturation DATETIME, total INT);                                                                    
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> describe chicks;
++------------------+----------+------+-----+---------+-------+
+| Field            | Type     | Null | Key | Default | Extra |
++------------------+----------+------+-----+---------+-------+
+| dateOfBirth      | datetime | YES  |     | NULL    |       |
+| dateOfMaturation | datetime | YES  |     | NULL    |       |
+| total            | int(11)  | YES  |     | NULL    |       |
++------------------+----------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> 
+
